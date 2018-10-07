@@ -29,7 +29,7 @@ public class VaultController {
 	@ApiOperation(value = "Get All Vault Keys")
 	@RequestMapping(value = "/getAll", method = RequestMethod.GET)
 	public Set<String> getAllMapKeys() {
-		logger.debug("Received Get All Hazelcast Keys Request");
+		logger.debug("Received Get All Vault Keys Request");
 
 		return null;
 	}

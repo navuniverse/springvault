@@ -5,3 +5,6 @@ spring:
         vault:
             token: 028fbfa1-6f71-dfe8-c078-bf288e9e5ba4
             scheme: http
+
+server:
+    port: 8888

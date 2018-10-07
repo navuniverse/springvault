@@ -28,7 +28,7 @@ public class SwaggerConfig {
 	private ApiInfo apiInfo() {
 		Contact contact = new Contact("Naveen Kumar", "www.rockingengineering.com", "contact@rockingengineering.com");
 
-		ApiInfo apiInfo = new ApiInfo(
+		return new ApiInfo(
 				"Spring Cloud Vault Test Microservice",
 				"RockingEngineering Spring Vault Test",
 				"1.0",
@@ -37,6 +37,5 @@ public class SwaggerConfig {
 				"RockingEngineering Internal License",
 				"https://www.rockingengineering.com/privacy-policy");
 
-		return apiInfo;
 	}
 }
