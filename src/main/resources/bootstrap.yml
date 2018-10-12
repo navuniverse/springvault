@@ -1,10 +1,9 @@
 spring:
-    application:
-        name: spring-cloud-vault
-    cloud:
-        vault:
-            token: 028fbfa1-6f71-dfe8-c078-bf288e9e5ba4
-            scheme: http
-
+  application:
+    name: configclient
+  cloud:
+    config:
+      token: f474964a-89bf-39e6-2e37-3d7de918f762
+      uri: http://localhost:8888
 server:
-    port: 8888
+  port: 8080

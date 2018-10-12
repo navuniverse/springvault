@@ -22,17 +22,10 @@
 	</parent>
 
 	<properties>
-		<!-- Hazelcast Spring Version -->
 		<spring-cloud-vault-dependencies.version>1.0.2.RELEASE</spring-cloud-vault-dependencies.version>
 
 		<!-- springfox-swagger -->
 		<springfox.swagger.version>2.6.1</springfox.swagger.version>
-
-		<!-- Commons io version -->
-		<commons.io.version>1.3.2</commons.io.version>
-
-		<!-- Commons Lang3 -->
-		<commons.lang3.version>3.4</commons.lang3.version>
 
 		<!-- Log4j Version -->
 		<log4j.version>1.2.17</log4j.version>
@@ -46,20 +39,14 @@
 
 	<dependencies>
 
-
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-vault-config</artifactId>
-		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
 		<dependency>
@@ -89,6 +76,11 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>${springfox.swagger.version}</version>
@@ -111,17 +103,6 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>${commons.io.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
 		</dependency>
 
 		<dependency>
