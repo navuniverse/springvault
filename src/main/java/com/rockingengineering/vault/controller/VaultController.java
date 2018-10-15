@@ -25,7 +25,7 @@ public class VaultController {
 	@Value("${client.pseudo.property}")
 	private String pseudoProperty;
 
-	@Value("${client.pseudo.property}")
+	@Value("${client.pseudo.property.vault}")
 	private String proeprtyFromVault;
 
 	@GetMapping("/property")
